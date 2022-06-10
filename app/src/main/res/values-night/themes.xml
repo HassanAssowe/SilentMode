@@ -1,0 +1,42 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.SilentMode" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryVariant">@color/blue_secondary</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:statusBarColor">#282828</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_primary</item>
+        <item name="colorSecondaryVariant">@color/blue_primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut
+        </item>
+        <item name="android:backgroundTint">#282828</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">15dp</item>
+        <item name="cornerSizeBottomLeft">15dp</item>
+    </style>
+
+    <style name="OptionItem" parent="">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Textinput" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">#282828</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+</resources>

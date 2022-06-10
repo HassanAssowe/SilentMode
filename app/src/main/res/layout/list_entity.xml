@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:transitionName="parent_view"
+    tools:ignore="UnusedAttribute">
+
+
+    <TextView
+        android:id="@+id/text_layanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/calendar_range"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:transitionName="text_layanan"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/text_dokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_layanan"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="14sp"
+        android:transitionName="text_dokter"
+        tools:text="start_date" />
+
+    <TextView
+        android:id="@+id/text_dokter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_dokter"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="14sp"
+        android:transitionName="text_dokter"
+        tools:text="end_date" />
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/text_dokter"
+        android:layout_alignBottom="@id/text_dokter2"
+        android:layout_alignParentEnd="true"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text_layanan"
+        android:layout_alignParentEnd="true"
+        android:text="S  S  M  T  W  T  F" />
+
+
+</RelativeLayout>
