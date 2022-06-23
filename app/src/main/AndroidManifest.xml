@@ -14,10 +14,10 @@
         <activity android:name=".ScheduleSilentMode"></activity>
         <activity android:name=".LocationalSilentMode" />
         <activity
-            android:name=".DailySilentMode"
+            android:name=".TimedSilentMode"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Landing"
+            android:name=".Main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

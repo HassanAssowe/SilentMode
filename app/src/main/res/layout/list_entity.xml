@@ -15,7 +15,7 @@
 
 
     <TextView
-        android:id="@+id/text_layanan"
+        android:id="@+id/text_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -29,10 +29,10 @@
         tools:text="Name" />
 
     <TextView
-        android:id="@+id/text_dokter"
+        android:id="@+id/text_start_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_layanan"
+        android:layout_below="@+id/text_name"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:ellipsize="end"
@@ -43,10 +43,10 @@
         tools:text="start_date" />
 
     <TextView
-        android:id="@+id/text_dokter2"
+        android:id="@+id/text_end_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_dokter"
+        android:layout_below="@+id/text_start_date"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
@@ -59,10 +59,11 @@
 
 
     <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/active_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/text_dokter"
-        android:layout_alignBottom="@id/text_dokter2"
+        android:layout_alignTop="@id/text_start_date"
+        android:layout_alignBottom="@id/text_end_date"
         android:layout_alignParentEnd="true"
         android:checked="true" />
 
@@ -70,7 +71,7 @@
         android:id="@+id/days"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/text_layanan"
+        android:layout_alignBottom="@id/text_name"
         android:layout_alignParentEnd="true"
         android:text="S  S  M  T  W  T  F" />
 

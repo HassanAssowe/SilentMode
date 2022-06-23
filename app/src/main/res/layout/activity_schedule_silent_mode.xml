@@ -106,7 +106,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/calendar_clock" />
+                    app:srcCompat="@drawable/ic_calendar_clock" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -150,7 +150,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/calendar_clock" />
+                    app:srcCompat="@drawable/ic_calendar_clock" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -204,7 +204,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <Button
-        android:id="@+id/textButton"
+        android:id="@+id/confirmButton"
         style="@style/TextAppearance.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
