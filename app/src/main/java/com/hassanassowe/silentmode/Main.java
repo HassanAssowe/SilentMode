@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -18,31 +19,28 @@ import java.util.ArrayList;
 
 public class Main extends AppCompatActivity implements Adapter.ItemClickListener {
 
+
     FloatingActionButton floatingActionButton;
     CircularRevealLinearLayout menu;
     CoordinatorLayout landing_mainLayout;
     private TextView menu_option1;
     private ArrayList<SilentMode> instances;
-    com.hassanassowe.silentmode.Adapter adapter;
+    private Adapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //BROKEN, THIS PARAGRAPH OF CODE BREAKS COLLAPSING OF FAB MENU WHEN CLICKING AWAY!!!!
         instances = new ArrayList<SilentMode>();
         Save_LoadData.loadData(this, instances);
-
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new com.hassanassowe.silentmode.Adapter(instances);
 
-
         FabMenu();
-
     }
-
-
 
     // Responsible for expanding the FloatingActionButton (FAB) into a Menu when pressed. Also handles menu interaction & Activity Switching.
     private void FabMenu() {
@@ -61,13 +59,11 @@ public class Main extends AppCompatActivity implements Adapter.ItemClickListener
                     menu.setVisibility(View.VISIBLE);
                     floatingActionButton.setExpanded(true);
 
-
-                     /*//W.I.P Responsible for dimming background elements. To emphasize the menu
+                    //W.I.P Responsible for dimming background elements. To emphasize the menu
                     WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
                     layoutParams.dimAmount = 0.75f;
                     getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
                     getWindow().setAttributes(layoutParams);
-                      */
 
                 }
             }
@@ -105,6 +101,6 @@ public class Main extends AppCompatActivity implements Adapter.ItemClickListener
 
     @Override
     public void onItemClick(View view, int position) {
-        //W.I.P OnClickHandler for each list_entity. To add the option to delete
+
     }
 }
