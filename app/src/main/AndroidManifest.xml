@@ -11,14 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SilentMode">
-        <activity android:name=".ScheduleSilentMode"></activity>
-        <activity android:name=".LocationalSilentMode" />
+        <activity android:name=".ScheduleSilentMode" />
+        <activity
+            android:name=".LocationalSilentMode"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TimedSilentMode"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Main"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

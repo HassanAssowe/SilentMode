@@ -21,6 +21,10 @@
         <item name="android:backgroundTint">@color/blue_primary</item>
     </style>
 
+    <style name="CustomShape" parent="">
+        <item name="android:backgroundTint">@color/blue_secondary</item>
+    </style>
+
     <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSizeTopRight">0dp</item>

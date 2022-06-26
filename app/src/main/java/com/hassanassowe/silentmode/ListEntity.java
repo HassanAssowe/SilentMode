@@ -1,12 +1,12 @@
 package com.hassanassowe.silentmode;
 
-public class listEntity {
+public class ListEntity {
     private String mtextlayanan;
     private String mtextdokter;
     private String mtextdokter2;
     private Boolean mactive;
 
-    public listEntity(String mtextlayanan, String mtextdokter, String mtextdokter2, Boolean mactive) {
+    public ListEntity(String mtextlayanan, String mtextdokter, String mtextdokter2, Boolean mactive) {
         this.mtextlayanan = mtextlayanan;
         this.mtextdokter = mtextdokter;
         this.mtextdokter2 = mtextdokter2;
