@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/constraintlayout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -41,7 +42,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:src="@drawable/volume_mute" />
+            android:src="@drawable/ic_volume_mute" />
 
         <TextView
             android:id="@+id/text_view_id"
@@ -81,6 +82,7 @@
             android:layout_gravity="bottom|left"
             android:text="Quick Silence:"
             android:textColor="@color/white"
+            android:tint="?attr/colorControlNormal"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="@id/fab"
             tools:layout_editor_absoluteX="15dp" />
@@ -94,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:elevation="04dp"
-                android:text="5m" />
+                android:text=" 5m" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_10m"
@@ -122,7 +124,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:elevation="04dp"
-                android:text="1 hr" />
+                android:text=" 1hr" />
 
         </com.google.android.material.chip.ChipGroup>
 

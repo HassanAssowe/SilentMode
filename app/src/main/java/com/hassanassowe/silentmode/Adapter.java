@@ -30,10 +30,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         public ViewHolder(View view) {
             super(view);
             // Define click listener for the ViewHolder's View
-            name = (TextView) view.findViewById(R.id.text_name);
-            startDate = (TextView) view.findViewById(R.id.text_start_date);
-            endDate = (TextView) view.findViewById(R.id.text_end_date);
-            active = (Switch) view.findViewById(R.id.active_indicator);
+            name = view.findViewById(R.id.text_name);
+            startDate = view.findViewById(R.id.text_start_date);
+            endDate = view.findViewById(R.id.text_end_date);
+            active = view.findViewById(R.id.active_indicator);
 
         }
 

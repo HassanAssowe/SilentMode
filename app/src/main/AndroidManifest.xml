@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hassanassowe.silentmode">
     <!-- Application Permissions -->
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"
+        android:required="true"/>
+
 
     <application
         android:allowBackup="true"
@@ -14,9 +16,6 @@
         <activity android:name=".ScheduleSilentMode" />
         <activity
             android:name=".LocationalSilentMode"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".TimedSilentMode"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Main"
